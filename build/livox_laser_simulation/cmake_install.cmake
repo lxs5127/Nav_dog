@@ -57,3 +57,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_laser_simulation" TYPE FILE FILES "/home/lxs/work_place/Nav_dog/src/livox_laser_simulation/package.xml")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/livox_laser_simulation" TYPE PROGRAM FILES "/home/lxs/work_place/Nav_dog/build/livox_laser_simulation/catkin_generated/installspace/pointcloud2livox.py")
+endif()
+

@@ -50,9 +50,12 @@
 
     <!-- <node pkg="unitree_gazebo" type="servo" name="servo" required="true" output="screen"/> -->
 
-    <!-- load the parameter unitree_controller -->
+    <!-- load the control stack (junior_ctrl 接管 servo 功能) -->
     <include file="$(find unitree_controller)/launch/set_ctrl.launch">
         <arg name="rname" value="$(arg rname)"/>
     </include>
+
+    <!-- pre_mwm: 将 /livox_lidar (PointCloud2) 转换为 /livox/lidar (CustomMsg) -->
+    <node pkg="livox_laser_simulation" type="pointcloud2livox.py" name="pre_mmw" output="screen"/>
 
 </launch>

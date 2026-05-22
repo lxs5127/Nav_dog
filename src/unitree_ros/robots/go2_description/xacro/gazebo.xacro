@@ -105,7 +105,7 @@
         <samples>24000</samples>
         <downsample>1</downsample>
         <csv_file_name>/home/lxs/work_place/Nav_dog/src/unitree_ros/robots/go2_description/scan_mode/mid360.csv</csv_file_name>
-        <ros_topic>/livox/lidar</ros_topic> 
+        <ros_topic>/livox_lidar</ros_topic> 
         <frameName>laser_livox</frameName>
         </plugin>
     </sensor>

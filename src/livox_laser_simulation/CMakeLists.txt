@@ -7,6 +7,7 @@ add_compile_options(-std=c++17)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf
+  rospy
 )
 
 find_package(gazebo REQUIRED)
@@ -29,10 +30,16 @@ include_directories(
 catkin_package(
         INCLUDE_DIRS include
         LIBRARIES livox_laser_simulation
-        CATKIN_DEPENDS tf
+        CATKIN_DEPENDS tf rospy
 )
 
 add_library(livox_laser_simulation SHARED src/livox_points_plugin.cpp src/livox_ode_multiray_shape.cpp)
 target_link_libraries(livox_laser_simulation ${catkin_LIBRARIES} RayPlugin)
 
 target_link_libraries(livox_laser_simulation libprotobuf.so.9)
+
+## 安装 Python 节点脚本
+catkin_install_python(PROGRAMS
+  script/pointcloud2livox.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

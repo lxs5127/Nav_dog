@@ -5,4 +5,4 @@ Description: Description of livox_laser_simulation
 Version: 0.0.0
 Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib -llivox_laser_simulation
-Requires: tf
+Requires: tf rospy
