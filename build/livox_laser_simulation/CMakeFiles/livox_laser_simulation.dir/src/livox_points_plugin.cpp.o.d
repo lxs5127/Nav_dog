@@ -2175,9 +2175,8 @@ livox_laser_simulation/CMakeFiles/livox_laser_simulation.dir/src/livox_points_pl
  /usr/include/gazebo-11/gazebo/ode/odeconfig.h \
  /usr/include/gazebo-11/gazebo/ode/error.h \
  /usr/include/ignition/math6/ignition/math.hh \
- /opt/ros/noetic/include/sensor_msgs/PointCloud.h \
- /opt/ros/noetic/include/geometry_msgs/Point32.h \
- /opt/ros/noetic/include/sensor_msgs/ChannelFloat32.h \
+ /opt/ros/noetic/include/sensor_msgs/PointCloud2.h \
+ /opt/ros/noetic/include/sensor_msgs/PointField.h \
  /usr/include/gazebo-11/gazebo/physics/Model.hh \
  /usr/include/gazebo-11/gazebo/physics/ModelState.hh \
  /usr/include/boost/regex.hpp /usr/include/boost/regex/config.hpp \
