@@ -102,10 +102,10 @@ unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_nodejs: /ho
 
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/HighState.msg
-/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/BmsState.msg
-/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/IMU.msg
-/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/MotorState.msg
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/Cartesian.msg
+/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/MotorState.msg
+/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/IMU.msg
+/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/HighState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/BmsState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lxs/work_place/Nav_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from unitree_legged_msgs/HighState.msg"
 	cd /home/lxs/work_place/Nav_dog/build/unitree_legged_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/HighState.msg -Iunitree_legged_msgs:/home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p unitree_legged_msgs -o /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg
 
@@ -121,17 +121,17 @@ unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_nodejs: /ho
 
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowCmd.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowCmd.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/LowCmd.msg
-/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowCmd.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/BmsCmd.msg
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowCmd.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/MotorCmd.msg
+/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowCmd.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/BmsCmd.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lxs/work_place/Nav_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from unitree_legged_msgs/LowCmd.msg"
 	cd /home/lxs/work_place/Nav_dog/build/unitree_legged_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/LowCmd.msg -Iunitree_legged_msgs:/home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p unitree_legged_msgs -o /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg
 
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/LowState.msg
-/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/BmsState.msg
-/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/IMU.msg
-/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/MotorState.msg
 /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/Cartesian.msg
+/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/MotorState.msg
+/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/IMU.msg
+/home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg/LowState.js: /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/BmsState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lxs/work_place/Nav_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from unitree_legged_msgs/LowState.msg"
 	cd /home/lxs/work_place/Nav_dog/build/unitree_legged_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg/LowState.msg -Iunitree_legged_msgs:/home/lxs/work_place/Nav_dog/src/unitree_legged_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p unitree_legged_msgs -o /home/lxs/work_place/Nav_dog/devel/share/gennodejs/ros/unitree_legged_msgs/msg
 
