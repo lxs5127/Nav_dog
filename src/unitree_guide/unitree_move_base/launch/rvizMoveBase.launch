@@ -2,8 +2,14 @@
     <!-- pointCloud2 to Laserscan -->
     <!-- <include file="$(find unitree_move_base)/launch/pointCloud2LaserScan.launch"/> -->
 
+    <!-- 加载保存的地图 -->
+    <node pkg="map_server" type="map_server" name="map_server" args="/home/lxs/work_place/Nav_dog/maps/map1.yaml"/>
+
     <!-- move_base -->
     <include file="$(find unitree_move_base)/launch/move_base.launch"/>
+
+    <!-- amcl -->
+    <include file="$(find unitree_move_base)/launch/amcl.launch"/>
 
     <!-- rviz -->
     <node pkg="rviz" type="rviz" name="Move_Base_rviz" args="-d $(find unitree_move_base)/config/move_base.rviz"/>

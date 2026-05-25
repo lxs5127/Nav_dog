@@ -1,75 +1,23 @@
 <launch>
-    <!-- transform pointCloud2 to laserScan -->
-    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="face_pointcloud_to_laserscan" 
+    <!-- Mid-360 3D LiDAR PointCloud2 转 LaserScan -->
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="mid360_pointcloud_to_laserscan" 
         respawn="false" output="screen">
-        <remap from="cloud_in" to="/cam1/point_cloud_face"/>
-        <remap from="/scan" to="/faceLaserScan"/>
+        <remap from="cloud_in" to="/livox_lidar"/>
+        <remap from="/scan" to="/scan"/>
         <rosparam>
-            target_frame: camera_face
+            target_frame: base
             transform_tolerance: 0.01
-            min_height: -0.05
-            max_height: 0.1
+            # 高度裁剪：只保留腿部和身体附近的点
+            min_height: -0.25
+            max_height: 0.5
 
-            angle_min: -0.087
-            angle_max: 0.087
-            angle_increment: 0.0175
-            scan_time: 0.3333
+            # Mid-360 360° 水平视场角
+            angle_min: -3.14159
+            angle_max: 3.14159
+            angle_increment: 0.0087  # ~0.5° 分辨率
+            scan_time: 0.1           # 10Hz
             range_min: 0.1
-            range_max: 1.5
-            use_inf: true
-
-            # Concurrency level, affects number of pointclouds queued for processing and number of threads used
-            # 0 : Detect number of cores
-            # 1 : Single threaded
-            # 2->inf : Parallelism level
-            concurrency_level: 1
-        </rosparam>
-        <!-- <rosparam file="$(find unitree_move_base)/config/pointCloud_to_laserScan_params.yaml" command="load" /> -->
-    </node>
-
-    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="left_pointcloud_to_laserscan" 
-        respawn="false" output="screen">
-        <remap from="cloud_in" to="/cam3/point_cloud_left"/>
-        <remap from="/scan" to="/leftLaserScan"/>
-        <rosparam>
-            target_frame: camera_laserscan_link_left
-            transform_tolerance: 0.01
-            min_height: -0.05
-            max_height: 0.1
-
-            angle_min: -0.087
-            angle_max: 0.087
-            angle_increment: 0.0175
-            scan_time: 0.3333
-            range_min: 0.1
-            range_max: 1.5
-            use_inf: true
-
-            # Concurrency level, affects number of pointclouds queued for processing and number of threads used
-            # 0 : Detect number of cores
-            # 1 : Single threaded
-            # 2->inf : Parallelism level
-            concurrency_level: 1
-        </rosparam>
-        <!-- <rosparam file="$(find unitree_move_base)/config/pointCloud_to_laserScan_params.yaml" command="load" /> -->
-    </node>
-
-    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="right_pointcloud_to_laserscan" 
-        respawn="false" output="screen">
-        <remap from="cloud_in" to="/cam4/point_cloud_right"/>
-        <remap from="/scan" to="/rightLaserScan"/>
-        <rosparam>
-            target_frame: camera_laserscan_link_right
-            transform_tolerance: 0.01
-            min_height: -0.05
-            max_height: 0.1
-
-            angle_min: -0.087
-            angle_max: 0.087
-            angle_increment: 0.0175
-            scan_time: 0.3333
-            range_min: 0.1
-            range_max: 1.5
+            range_max: 30.0
             use_inf: true
 
             # Concurrency level, affects number of pointclouds queued for processing and number of threads used

@@ -13,7 +13,6 @@
     <arg name="user_debug" default="false"/>
     
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <!-- <arg name="world_name" value="$(find unitree_gazebo)/worlds/$(arg wname).world"/> -->
         <arg name="world_name" value="$(find unitree_move_base)/worlds/$(arg wname).world"/>
         <arg name="debug" value="$(arg debug)"/>
         <arg name="gui" value="$(arg gui)"/>
@@ -57,6 +56,6 @@
     </include>
 
     <!-- pre_mwm: 将 /livox_lidar (PointCloud2) 转换为 /livox/lidar (CustomMsg) -->
-    <node pkg="livox_laser_simulation" type="pointcloud2livox.py" name="pre_mmw" output="screen"/>
+    <!-- <node pkg="livox_laser_simulation" type="pointcloud2livox.py" name="pre_mmw" output="screen"/> -->
 
 </launch>
